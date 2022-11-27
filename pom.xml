@@ -109,6 +109,7 @@
                 <configuration>
                     <api>JDO</api>
                     <persistenceUnitName>MyTest</persistenceUnitName>
+                    <persistenceUnitName>ConverterTest</persistenceUnitName>
                     <fork>false</fork>
                     <verbose>false</verbose>
                 </configuration>
