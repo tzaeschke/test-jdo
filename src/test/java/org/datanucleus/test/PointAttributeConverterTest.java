@@ -51,7 +51,7 @@ public class PointAttributeConverterTest {
 
   private PersistenceManager pm;
   private PersistenceManager getPM() {
-    PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("ConverterTest");
+    PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("MyTest");
     PersistenceManager pm = pmf.getPersistenceManager();
     return pm;
   }

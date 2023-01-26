@@ -460,7 +460,7 @@ public abstract class JDO_Test extends TestCase {
     if (pmf == null) {
       //PMFPropertiesObject = loadProperties(PMFProperties); // will exit here if no properties
       //pmf = JDOHelper.getPersistenceManagerFactory(PMFPropertiesObject);
-      pmf = JDOHelper.getPersistenceManagerFactory("ConverterTest"); // TODO?!?!
+      pmf = JDOHelper.getPersistenceManagerFactory("MyTest"); // TODO?!?!
       if (supportedOptions == null) {
         supportedOptions = pmf.supportedOptions();
       }
