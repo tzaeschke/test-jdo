@@ -21,10 +21,17 @@
     </properties>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.datanucleus</groupId>-->
+<!--            <artifactId>javax.jdo</artifactId>-->
+<!--            <version>${javax_jdo.ver}</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.datanucleus</groupId>
-            <artifactId>javax.jdo</artifactId>
-            <version>${javax_jdo.ver}</version>
+            <groupId>javax.jdo</groupId>
+            <artifactId>jdo-api</artifactId>
+            <version>3.3-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/jdo-api-3.3-SNAPSHOT.jar</systemPath>
         </dependency>
 
         <dependency>

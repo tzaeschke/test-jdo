@@ -22,7 +22,7 @@ import tck.util.ConvertiblePointToStringConverter;
 import javax.jdo.annotations.Convert;
 
 /** A simple point class with two fields. The whole class/type is declared convertible. */
-//@Convert(value = ConvertiblePointToStringConverter.class)
+@Convert(value = ConvertiblePointToStringConverter.class)
 public class ConvertiblePoint {
   public int x;
   public Integer y;

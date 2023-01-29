@@ -17,54 +17,51 @@
 package org.datanucleus.test;
 
 import org.junit.Test;
-import tck.pc.PCRectAnnotated;
+import tck.pc.PCRectPointTypeAnnotated;
 
 /**
- * <B>Title:</B>PointAttributeConverterTest <br>
- * <B>Keywords:</B> mapping <br>
- * <B>Assertion ID:</B> [not identified] <br>
- * <B>Assertion Description: </B> A IPCRect instance refers two Point instances, that are stored as
- * strings in the datastore. A Point instance is converted using an AttributeConverter.
+ * Note: This file mostly is copied from PointAttributeConverterTest.java here:
+ * https://github.com/apache/db-jdo/blob/main/tck/src/main/java/org/apache/jdo/tck/api/converter/PointAttributeConverterTest.java
  */
-public class StringAnnotatedTestHelper extends AnnotationTestHelper {
+public class TypeAnnotatedTest extends AnnotationTestHelper {
 
     /**
      * Test method creating and storing a PCRectStringAnnotated instance.
      */
     @Test
-    public void testStorePCRectStringAnnotatedInstance() {
-        runStoreIPCRectInstance(PCRectAnnotated.class);
+    public void testStorePCRectPointTypeAnnotatedInstance() {
+        runStoreIPCRectInstance(PCRectPointTypeAnnotated.class);
     }
 
     /**
      * Test method reading a PCRectStringAnnotated instance from the datastore.
      */
     @Test
-    public void testReadPCRectStringAnnotatedInstance() {
-        runReadIPCRectInstance(PCRectAnnotated.class);
+    public void testReadPCRectPointTypeAnnotatedInstance() {
+        runReadIPCRectInstance(PCRectPointTypeAnnotated.class);
     }
 
     /**
      * Test method modifying a PCRectStringAnnotated instance and storing in the datastore.
      */
     @Test
-    public void testModifyPCRectStringAnnotatedInstance() {
-        runModifyIPCRectInstance(PCRectAnnotated.class);
+    public void testModifyPCRectPointTypeAnnotatedInstance() {
+        runModifyIPCRectInstance(PCRectPointTypeAnnotated.class);
     }
 
     /**
      * Test method running a PCRectStringAnnotated query with a query parameter of type String.
      */
     @Test
-    public void testPCRectStringAnnotatedQueryWithPointParam() {
-        runQueryWithPointParameter(PCRectAnnotated.class, false);
+    public void testPCRectPointTypeAnnotatedQueryWithPointParam() {
+        runQueryWithPointParameter(PCRectPointTypeAnnotated.class, true);
     }
 
     /**
      * Test method running a PCRectStringAnnotated query with a query parameter of type Point.
      */
     @Test
-    public void testPCRectStringAnnotatedQueryWithStringParam() throws Exception {
-        runQueryWithStringParameter(PCRectAnnotated.class);
+    public void testPCRectPointTypeAnnotatedQueryWithStringParam() throws Exception {
+        runQueryWithStringParameter(PCRectPointTypeAnnotated.class);
     }
 }
